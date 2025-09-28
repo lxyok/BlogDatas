@@ -33,7 +33,7 @@ gzip -dc /root/dabian10.arm.img.gz | dd of=/dev/sdb
 
 
 ## DD完成后解挂 引导卷
-断开iSCSI
+### 断开iSCSI
 sudo iscsiadm -m node -T iqn.2015-02.oracle.boot:uefi -p 169.254.2.2:3260 -u
 sudo iscsiadm -m node -o delete -T iqn.2015-02.oracle.boot:uefi -p 169.254.2.2:3260
 
